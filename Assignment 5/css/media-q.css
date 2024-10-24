@@ -9,24 +9,63 @@
     --text-white: white;
 }
 
+@media screen and (min-width: 300px) {
+    .home-buttons {
+        width: 292px;
+        display: flex;
+        justify-content: space-between;
+        transform: translateX(-5%);
+
+    }
+
+    .home-buttons a {
+        padding: 0px 20px;
+    }
+
+}
+
+@media screen and (min-width: 350px) {
+    .home-buttons {
+        width: 310px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        transform: translateX(-5%);
+    }
+
+    .home-buttons a {
+        padding: 0px 30px;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    .home-buttons {
+        transform: translateX(0%);
+    }
+
+}
 
 
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 680px) {
     .home-text h3 {
         width: 70%;
-        margin: auto;
+        margin: 50px auto;
     }
 
     .home-image {
         width: 80%;
         margin: auto;
     }
+
+    .home-buttons {
+        width: 350px;
+    }
 }
 
 
 @media screen and (min-width: 769px) {
     .home-text h3 {
-        width: 70%;
+        width: 60%;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -165,20 +204,27 @@
 }
 
 @media screen and (min-width: 993px) {
+    .home {
+        justify-content: space-around;
+
+    }
+
     .home-container {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: space-around;
+        width: fit-content;
     }
 
     .home-text {
         margin: 0;
         text-align: left;
-        width: 50%;
+        width: 450px;
+        margin: 40px 50px;
     }
 
     .home-text h3 {
-        width: 80%;
+        width: 350px;
         margin: 0;
         margin-top: 30px;
         margin-left: 15px;
@@ -191,12 +237,13 @@
     }
 
     .home-image {
-        width: 45%;
+        width: 450px;
+
     }
 
     .home-buttons {
-        width: 350px;
-        margin: 0;
+        width: 320px;
+        margin-left: 15px;
     }
 
     .home-buttons a {
@@ -335,14 +382,29 @@
         width: 100%;
     }
 
+    .home {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+
+    }
+
+    .home {
+        padding: 140px 0 100px 0;
+    }
 
 
     .home-image {
-        width: 35%;
+        width: 500px;
+    }
+
+    .home-text {
+        margin: 40px 200px 0 0;
+
     }
 
     .home-text h3 {
-        width: 70%;
+        width: 500px;
     }
 
     .small-inputs {
@@ -403,25 +465,35 @@
 
 @media screen and (min-width: 1401px) {
 
-    .home {
-        /* height: 100vh; */
-        display: flex;
-
-    }
-
     .home-container {
         align-items: center;
+        display: flex;
+        width: 80%;
         justify-content: space-between;
-        width: 90%;
         margin: auto;
     }
 
     .home-text h3 {
-        width: 70%;
+        width: 500px;
+    }
+
+    .home-text {
+        margin-top: 0;
+        width: 50%;
+    }
+
+    .sed {
+        width: 500px;
     }
 
     .home-image {
-        width: 35%;
+        width: 50%;
+        margin: 0;
+    }
+
+    .home-image img {
+        width: 500px;
+
     }
 
     .chefs-container-of-images {
@@ -448,8 +520,5 @@
         width: 95%;
         margin: auto;
     }
-
-
-
 
 }

@@ -19,6 +19,7 @@ body {
     --background-color: #202020;
     --text-white: white;
     --filter: 12.5%;
+    --selection: #926321;
 }
 
 body {
@@ -137,7 +138,7 @@ body {
 /* --------------------------------------------------------------------home-------------------------------------------------------------------- */
 .home {
     background-color: var(--home-circle, #EEEEEE);
-    padding: 150px 20px;
+    padding: 120px 0px;
 }
 
 
@@ -200,13 +201,13 @@ body {
 }
 
 .home-container {
-    width: 100%;
+    width: 95%;
     margin: auto;
 
 }
 
 .home-image {
-    width: 80%;
+    width: 100%;
     margin: auto;
 
 }
@@ -235,10 +236,8 @@ body {
 
 .home-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 350px;
-    margin: auto;
 }
 
 .home-video p {
@@ -313,7 +312,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
-    border: none;
+    /* border: none; */
     transition: 0.5s all;
     text-decoration: none;
 }
@@ -336,7 +335,7 @@ body {
     border-radius: 10px;
     transform: scale(0.9);
     transition: 0.5s all;
-    
+
 }
 
 .walter-white-des {
@@ -890,8 +889,11 @@ body {
     background: #555;
 }
 
+::selection {
+    color: var(--text-button-color, #EEEEEE);
 
-
+    background: var(--selection, #D85454);
+}
 
 
 
